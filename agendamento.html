@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agendar Coleta</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Agendar Coleta</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="mapa.html">Mapa de Descarte</a></li>
+        <li><a href="agendamento.html">Agendar Coleta</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form id="formAgendamento">
+      <label for="nome">Nome completo:</label>
+      <input type="text" id="nome" required/>
+
+      <label for="endereco">Endereço completo:</label>
+      <input type="text" id="endereco" required/>
+
+      <label for="item">Tipo de eletrônico:</label>
+      <input type="text" id="item" required/>
+
+      <label for="data">Data para coleta:</label>
+      <small style="display: block; margin-bottom: 8px; color: #555;">* Só é possível agendar entre 3 dias e no máximo 2 semanas a partir de hoje.</small>
+      <input type="date" id="data" required />
+
+      <button type="submit">Agendar Coleta</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 E-Lixo no Lugar Certo</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

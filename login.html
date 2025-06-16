@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Coletas</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+    <h2>Login de Responsável</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="mapa.html">Mapa de Descarte</a></li>
+        <li><a href="agendamento.html">Agendar Coleta</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form id="loginForm">
+      <label for="text">Login:</label>
+      <input type="text" id="text" required />
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" required />
+
+      <button type="submit">Entrar</button>
+      <p id="erroLogin" style="color:red; display:none;">Login inválido.</p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 E-Lixo no Lugar Certo</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mapa de Descarte</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="css/mapa.css">
+</head>
+<body>
+  <header>
+    <h1>Mapa de Descarte</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="mapa.html">Mapa de Descarte</a></li>
+        <li><a href="agendamento.html">Agendar Coleta</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <aside class="menu-lateral">
+      <h2>Pontos de Coleta</h2>
+      <ul id="listaPontos">
+        <li data-id="0">Tiro de Guerra<br><small>Av. Mandacaru, 730</small></li>
+        <li data-id="1">Faculdades Maringá<br><small>Av. Prudente de Morais, 815</small></li>
+        <li data-id="2">Paço Municipal<br><small>Av. XV de Novembro, 701</small></li>
+        <li data-id="3">Câmara Municipal<br><small>Av. Papa João XXIII, 239</small></li>
+        <li data-id="4">4º BPM<br><small>Rua Mitsuzu Taguchi, 99</small></li>
+      </ul>
+    </aside>
+
+    <div id="map"></div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 E-Lixo no Lugar Certo</p>
+  </footer>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
