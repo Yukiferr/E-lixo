@@ -12,12 +12,38 @@ body {
 header {
   background-color: #00796b;
   color: white;
-  padding: 20px 10px;
+  padding: 20px;
   text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25); /* ⬅ sombra adicionada */
+  z-index: 10;
+  position: relative;
 }
 
-header h1 {
-  font-size: 24px;
+header nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 0;
+  margin-top: 10px;
+  list-style: none;
+}
+
+header nav ul li a {
+  background-color: #004d40;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+header nav ul li a:hover {
+  background-color: #00695c;
+  transform: scale(1.05);
 }
 
 footer {
@@ -28,8 +54,9 @@ footer {
   background-color: #00796b;
   color: white;
   text-align: center;
-  padding: 10px 0;
+  padding: 5px 0;
   z-index: 999;
+  margin: 0;
 }
 
 nav ul {
@@ -115,4 +142,17 @@ main button {
 
 main button:hover {
   background-color: #004d40;
+}
+
+header h1 {
+  background-color: #004d40;
+  color: #ffffff;
+  padding: 12px 20px;
+  margin: 0 auto;
+  font-size: 28px;
+  border-radius: 10px;
+  box-shadow: inset 0 -4px 0 rgba(0,0,0,0.15), 0 4px 10px rgba(0,0,0,0.2);
+  width: fit-content;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  background: linear-gradient(90deg, #00695c, #26a69a);
 }

@@ -48,7 +48,6 @@ if (mapDiv) {
     marcadores.push(marker);
   });
 
-  // Clique nos itens do menu
   const lista = document.getElementById("listaPontos");
   if (lista) {
     const itens = lista.querySelectorAll("li");
@@ -64,23 +63,18 @@ if (mapDiv) {
         });
         marcador.openPopup();
 
-        // Remove classe ativa de todos e adiciona no clicado
         itens.forEach(el => el.classList.remove("ativo"));
         item.classList.add("ativo");
 
-        // Fecha menu em telas pequenas
         if (window.innerWidth <= 768) {
           document.querySelector(".menu-lateral").classList.remove("ativo");
         }
       });
     });
   }
-
 }
 
 
-
-// === LOGIN ===
 const loginForm = document.getElementById("loginForm");
 if (loginForm) {
   loginForm.addEventListener("submit", function (e) {
@@ -97,7 +91,6 @@ if (loginForm) {
   });
 }
 
-// === AGENDAMENTO ===
 const formAgendamento = document.getElementById("formAgendamento");
 if (formAgendamento) {
   formAgendamento.addEventListener("submit", function (e) {
@@ -118,7 +111,6 @@ if (formAgendamento) {
     formAgendamento.reset();
   });
 
-  // Definir limite de datas
   function definirLimiteData() {
     const inputData = document.getElementById("data");
     if (!inputData) return;
@@ -139,7 +131,6 @@ if (formAgendamento) {
   definirLimiteData();
 }
 
-// === PAINEL ADMINISTRATIVO ===
 const tabela = document.getElementById("tabelaAgendamentos");
 if (tabela) {
   const agendamentos = JSON.parse(localStorage.getItem("agendamentos")) || [];

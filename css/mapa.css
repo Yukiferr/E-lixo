@@ -5,7 +5,7 @@ body {
 
 .container {
   display: flex;
-  min-height: calc(100vh - 120px); /* considerando 60px header + 60px footer */
+  min-height: calc(100vh - 120px);
 }
 
 .menu-lateral {
@@ -34,7 +34,7 @@ body {
 
 #map {
   flex-grow: 1;
-  height: calc(100vh - 120px); /* espaço reservado para header e footer */
+  height: calc(100vh - 120px); 
 }
 
 .menu-lateral li.ativo {
@@ -59,7 +59,7 @@ body {
   #map {
     flex-grow: 1;
     width: 100%;
-    min-height: 50vh; /* nunca menor que 50% da tela */
-    height: calc(100vh - 120px - 220px); /* 120px header+footer, 220px estimado do menu */
+    min-height: 50vh; 
+    height: calc(100vh - 120px - 220px); 
   }
 }
